@@ -44,6 +44,13 @@ Mise à jour d'une salle :
 
 - Mise à jour du CRUD pour se connecter à un backend non sécurisé.
 
+Pour lancer le backend non sécuriser :
+- Ouvrir un terminal
+- cd room-backend
+- npm install
+- npm run start:no-auth
+- Votre backend est disponible à l'adresse http://localhost:3000
+
 * Chapitre 3 : 
 
 Ajouter la partie authentification avec :
