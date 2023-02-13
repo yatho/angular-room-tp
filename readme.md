@@ -44,7 +44,7 @@ Mise à jour d'une salle :
 
 - Mise à jour du CRUD pour se connecter à un backend non sécurisé.
 
-Pour lancer le backend non sécuriser :
+Pour lancer le backend non sécurisé :
 - Ouvrir un terminal
 - cd room-backend
 - npm install
@@ -55,13 +55,31 @@ Pour lancer le backend non sécuriser :
 
 Ajouter la partie authentification avec :
     - Création d'une page de login.
+    - Mise à jour du menu pour gérer la connexion / déconnexion de l'utilisateur.
     - Création du service d'authentification.
     - Sécurisation de l'appel au CRUD déjà fait dans le chapitre 2.
     - Message d'erreur et redirection vers la page de login en cas d'erreur d'authentification.
 
+Pour lancer le backend sécurisé :
+- Ouvrir un terminal
+- cd room-backend
+- npm install
+- npm run build
+- npm run start
+- Votre backend est disponible à l'adresse http://localhost:3000
+
+Page d'authentification :
+![Page d'authentification](tp-sample-interface/authent.png)
+
+Menu :
+![Menu](tp-sample-interface/menu_authenticated.png)
+
 * Chapitre 4 :
 
-- Ajouter des tests automatisers
+Ajouter des tests automatisés Cypress :
+    - Tester la connexion / déconnexion
+    - Tester l'ajout d'une salle et vérifier qu'elle est dispo dans la liste
+    - Tester la suppression de la salle précédemment ajoutée
 
 * Chapitre 5 :
 
