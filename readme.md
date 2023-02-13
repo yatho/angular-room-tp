@@ -39,3 +39,25 @@ Création d'une salle :
 
 Mise à jour d'une salle :
 ![Détails d'une salle](tp-sample-interface/room-detail.png)
+
+* Chapitre 2 :
+
+- Mise à jour du CRUD pour se connecter à un backend non sécurisé.
+
+* Chapitre 3 : 
+
+Ajouter la partie authentification avec :
+    - Création d'une page de login.
+    - Création du service d'authentification.
+    - Sécurisation de l'appel au CRUD déjà fait dans le chapitre 2.
+    - Message d'erreur et redirection vers la page de login en cas d'erreur d'authentification.
+
+* Chapitre 4 :
+
+- Ajouter des tests automatisers
+
+* Chapitre 5 :
+
+- Améliorer les performances (diminuer la taille des bundles générés + Optimiser le cycle de vie des objets angular).
+- Augmenter la réutilisabilité du code.
+- Déplacer les portions de code réutilisable dans une librairie séparée.
