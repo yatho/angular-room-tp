@@ -1,70 +1,15 @@
-* Chapitre 0 :
+# Codelabs TP Angular - Mise en pratique formation de base
 
-- Création du projet à l'aide d'angular cli
-- Migrer les tests unitaires pour la librairie jest
-- Ajouter la librairie material
-- Mise à jour du projet généré pour utiliser les standalones components (Optional)
-- Procédé à l'affichage d'une navbar material et d'un titre
-- Vérifier que les tests sont ok
+## Création de contenu
 
-* Chapitre 1 :
+L'ensemble des TPs se situes dans le fichier ``tp.md``. Les TPs sont au format Google Codelabs.
 
-- Création du CRUD "local" pour la gestion des salles pour une future interface d'administration:
-- La suppression doit demander une validation de l'action, puis recharger la liste en cas de suppression
-- Suite à l'action de mise à jour ou de création, on retourne sur la liste des salles.
-- La gestion des salles est faite de façon à pouvoir brancher une API par la suite.
+## Déploiement du Codelabs
 
-Object room ->
-```json
-{
-    id -> int
-    capacity -> int
-    accessibility -> boolean
-    equipments: [
-        TABLE,
-        VISIO
-    ],
-    address: string,
-    telephone: string
-}
-```
+Le Codelabs est déployé sur github sites. Pour générer le site statique à déployer, il faut lancer la commande ``claat export tp.md``.
+Cette commande va créer un dossier contenant le site complet au format souhaité.
+Un fois pousser sur github sur la branche ``main``, le site sera automatiquement déployé.
 
-Voici un exemple des écrans attendus :
+## Mise à jour du backend
 
-La liste des salles :
-![Liste des salles](tp-sample-interface/admin-list.png)
-
-Création d'une salle :
-![Création d'une salle](tp-sample-interface/create-room.png)
-
-Mise à jour d'une salle :
-![Détails d'une salle](tp-sample-interface/room-detail.png)
-
-* Chapitre 2 :
-
-- Mise à jour du CRUD pour se connecter à un backend non sécurisé.
-
-Pour lancer le backend non sécuriser :
-- Ouvrir un terminal
-- cd room-backend
-- npm install
-- npm run start:no-auth
-- Votre backend est disponible à l'adresse http://localhost:3000
-
-* Chapitre 3 : 
-
-Ajouter la partie authentification avec :
-    - Création d'une page de login.
-    - Création du service d'authentification.
-    - Sécurisation de l'appel au CRUD déjà fait dans le chapitre 2.
-    - Message d'erreur et redirection vers la page de login en cas d'erreur d'authentification.
-
-* Chapitre 4 :
-
-- Ajouter des tests automatisers
-
-* Chapitre 5 :
-
-- Améliorer les performances (diminuer la taille des bundles générés + Optimiser le cycle de vie des objets angular).
-- Augmenter la réutilisabilité du code.
-- Déplacer les portions de code réutilisable dans une librairie séparée.
+Le backend est dans le dossier room-backend.

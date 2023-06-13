@@ -1,0 +1,153 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Angular TP - Mise en pratique de la formation Angular initiale</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="codelab-angular-tp-fil-rouge"
+                  title="Angular TP - Mise en pratique de la formation Angular initiale"
+                  environment="web"
+                  feedback-link="https://github.com/yatho/angular-tp">
+    
+      <google-codelab-step label="Introduction" duration="0">
+        <p>L&#39;objectif de ce Codelabs est de pratiquer le framework Angular pour voir si vous avez acquis les bases de développement.</p>
+<p>Vous pouvez partager avec un Tech Lead votre avancée sur le sujet via un repo GIT.</p>
+<p>Il est demandé au cours de ce TP d&#39;utiliser toute les bonnes pratiques vu lors de la formation initiale Angular.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Chapitre 0 : Initialisation du projet" duration="30">
+        <ul>
+<li>Création du projet à l&#39;aide d&#39;angular cli</li>
+<li>Migrer les tests unitaires pour la librairie jest</li>
+<li>Ajouter la librairie material</li>
+<li>Mise à jour du projet généré pour utiliser les standalones components (Optional)</li>
+<li>Procédé à l&#39;affichage d&#39;une navbar material et d&#39;un titre</li>
+<li>Vérifier que les tests sont ok</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Chapitre 1 : Création d&#39;un CRUD local" duration="90">
+        <ul>
+<li>Création du CRUD &#34;local&#34; pour la gestion des salles pour une future interface d&#39;administration:</li>
+<li>La suppression doit demander une validation de l&#39;action, puis recharger la liste en cas de suppression</li>
+<li>Suite à l&#39;action de mise à jour ou de création, on retourne sur la liste des salles.</li>
+<li>La gestion des salles est faite de façon à pouvoir brancher une API par la suite.</li>
+</ul>
+<p>Object room -&gt;</p>
+<pre><code language="language-json" class="language-json">{
+    id -&gt; int
+    capacity -&gt; int
+    accessibility -&gt; boolean
+    equipments: [
+        TABLE,
+        VISIO
+    ],
+    address: string,
+    telephone: string
+}
+</code></pre>
+<p>Voici un exemple des écrans attendus :</p>
+<p>La liste des salles : <img alt="Liste des salles" src="img/733aad85c580a53f.png"></p>
+<p>Création d&#39;une salle : <img alt="Création d&amp;rsquo;une salle" src="img/99e748f4b155f9e5.png"></p>
+<p>Mise à jour d&#39;une salle : <img alt="Détails d&amp;rsquo;une salle" src="img/64f6c8e3947bc1a6.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Chapitre 2 : Utiliser des APIs" duration="10">
+        <ul>
+<li>Récupérer le backend <ul>
+<li><a href="https://download-directory.github.io?url=https://github.com/yatho/angular-tp/tree/main/room-backend" target="_blank">Télécharger le backend</a></li>
+</ul>
+</li>
+<li>Lancer le backend en mode non sécurisé : <ul>
+<li>Ouvrir un terminal</li>
+<li>Ce positionner dans le dossier du backend</li>
+<li>npm install</li>
+<li>npm run start:no-auth</li>
+<li>Votre backend est disponible à l&#39;adresse http://localhost:3000</li>
+</ul>
+</li>
+<li>Mise à jour du CRUD pour se connecter à un backend non sécurisé.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Chapitre 3 : Authentification" duration="30">
+        <ul>
+<li>Lancement du backend sécurisé : <ul>
+<li>Ouvrir un terminal</li>
+<li>Ce positionner dans le dossier du backend</li>
+<li>npm install (si ce n&#39;est pas déjà fait)</li>
+<li>npm start</li>
+<li>Votre backend est disponible à l&#39;adresse http://localhost:3000</li>
+</ul>
+</li>
+<li>Création d&#39;une page de login.</li>
+<li>Création du service d&#39;authentification.</li>
+<li>Sécurisation de l&#39;appel au CRUD déjà fait dans le chapitre 2.</li>
+<li>Message d&#39;erreur et redirection vers la page de login en cas d&#39;erreur d&#39;authentification.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Chapitre 4 : Tester" duration="60">
+        <ul>
+<li>Ajouter des tests automatisers Cypress ou Playwright</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Conclusion" duration="0">
+        <p>Vous avez mis en place :</p>
+<ul>
+<li>Une application Angular</li>
+<li>Un service CRUD</li>
+<li>Des composants materials</li>
+<li>Plusieurs formulaires</li>
+<li>Du routing</li>
+<li>Un service de connexion</li>
+<li>Un guard d&#39;authentification</li>
+<li>Un Http Filter</li>
+<li>Des tests cypress/Playwright + jest</li>
+</ul>
+<p>Bravo, vous êtes prêt pour la formation avancée proposée par Apside TOP.</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
