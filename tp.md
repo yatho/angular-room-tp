@@ -70,6 +70,7 @@ Duration: 0:10:00
     - Ouvrir un terminal
     - Ce positionner dans le dossier du backend
     - npm install
+    - npm run build
     - npm run start:no-auth
     - Votre backend est disponible à l'adresse http://localhost:3000
 - Mise à jour du CRUD pour se connecter à un backend non sécurisé.
