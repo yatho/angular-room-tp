@@ -82,6 +82,7 @@ Duration: 0:30:00
   - Ouvrir un terminal
   - Ce positionner dans le dossier du backend
   - npm install (si ce n'est pas déjà fait)
+  - npm run build
   - npm start
   - Votre backend est disponible à l'adresse http://localhost:3000
 - Création d'une page de login.
