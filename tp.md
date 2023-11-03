@@ -15,7 +15,7 @@ L'objectif de ce Codelabs est de pratiquer le framework Angular pour voir si vou
 
 Vous pouvez partager avec un Tech Lead votre avancée sur le sujet via un repo GIT.
 
-Il est demandé au cours de ce TP d'utiliser toute les bonnes pratiques vu lors de la formation initiale Angular.
+Il est demandé au cours de ce TP d'utiliser toute les bonnes pratiques vues lors de la formation initiale Angular.
 
 ## Chapitre 0 : Initialisation du projet
 Duration: 0:30:00
